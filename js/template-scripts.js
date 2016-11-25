@@ -19,4 +19,7 @@ jQuery(document).ready(function ($) {
         singleItem: true,
         transitionStyle: "fade"
     });
+   $("#shop-button").click(function() {
+      window.location.href = 'http://hiitfit.wodify.com/OnlineSalesPortal/PlansEntry.aspx'
+   });
 });

@@ -22,4 +22,8 @@ jQuery(document).ready(function ($) {
    $("#shop-button").click(function() {
       window.location.href = 'http://hiitfit.wodify.com/OnlineSalesPortal/PlansEntry.aspx'
    });
+
+    $("#free-class-button").click(function() {
+      window.location.href = 'http://hiitfit.wodify.com/OnlineSalesPortal/SessionsByLocationEntry.aspx?LocationId=4831&OnlineMembershipId=60787'
+   });
 });

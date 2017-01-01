@@ -190,6 +190,16 @@ table tr:nth-of-type(2n) {
 th {border-right:1px solid #fff;}
 td {border-right:1px solid #fff;}
 
+.vertical-align-exterior {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.vertical-align-interior {
+  display: table-cell;
+  vertical-align: middle;
+}
 
 /* Backgrounds */
 .background-white-hightlight .top-nav .active-item > a, .background-white-hightlight .top-nav li a:hover, .background-white-hightlight .aside-nav li a:hover, 
@@ -1213,6 +1223,19 @@ p.form-success {
   border-left: 2px solid #d01c15 !important;
 }
 
+/* -1800 version */
+@media screen and (max-width:1800px) {
+  #tf-banner-img {
+    margin-top: 15%;
+  }
+}
+
+/* -1600 version */
+@media screen and (max-width:1500px) {
+  #tf-banner-img {
+    margin-top: 25%;
+  }
+}
 
 /* -1120px version */
 @media screen and (max-width:1120px) {
@@ -1223,6 +1246,9 @@ p.form-success {
 
 /* -768px version */
 @media screen and (max-width:768px) {
+    #tf-banner-img {
+      margin-top: 0 !important;
+    }
     .top-nav .right {
       float: none;
     }
@@ -1567,7 +1593,7 @@ p.form-success {
     .owl-buttons {
       display: none;
     }
-}  
+}
 
 /* -480px version */
 @media screen and (max-width:480px) {

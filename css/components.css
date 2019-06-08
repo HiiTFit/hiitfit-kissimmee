@@ -289,3 +289,10 @@ a.tooltip-content.tooltip-bottom, .tooltip-content.tooltip-bottom {
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* IG Video */
+#ig-video-credit {
+    position: absolute;
+    bottom: 55px;
+    left: calc(50% - 175px);
+}

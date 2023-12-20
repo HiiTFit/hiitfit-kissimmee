@@ -30,7 +30,6 @@ a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover {
     padding: 0.625rem 1.25rem;
     transition: background 0.20s linear 0s;
     -o-transition: background 0.20s linear 0s;
-    -ms-transition: background 0.20s linear 0s;
     -moz-transition: background 0.20s linear 0s;
     -webkit-transition: background 0.20s linear 0s;
 }
@@ -69,7 +68,6 @@ form.customform input, form.customform textarea, form.customform select {
     background: none repeat scroll 0 0 #F5F5F5;
     transition: background 0.20s linear 0s;
     -o-transition: background 0.20s linear 0s;
-    -ms-transition: background 0.20s linear 0s;
     -moz-transition: background 0.20s linear 0s;
     -webkit-transition: background 0.20s linear 0s;
 }
@@ -117,10 +115,8 @@ form.customform button {
     height: 2.7rem;
     padding: 0.625rem;
     cursor: pointer;
-    width: 100%;
     transition: background 0.20s linear 0s;
     -o-transition: background 0.20s linear 0s;
-    -ms-transition: background 0.20s linear 0s;
     -moz-transition: background 0.20s linear 0s;
     -webkit-transition: background 0.20s linear 0s;
 }
@@ -128,7 +124,7 @@ form.customform button {
 /* Tooltip */
 a.tooltip-container, .tooltip-container {
     border-bottom: 1px dotted;
-    border-bottom-color: color;
+    border-bottom-color: #ddd;
     cursor: help;
     font-weight: 600;
 }
@@ -186,7 +182,6 @@ a.tooltip-content.tooltip-bottom, .tooltip-content.tooltip-bottom {
     text-align: center;
     transition: all 0.20s linear 0s;
     -o-transition: all 0.20s linear 0s;
-    -ms-transition: all 0.20s linear 0s;
     -moz-transition: all 0.20s linear 0s;
     -webkit-transition: all 0.20s linear 0s;
 }
@@ -236,7 +231,6 @@ a.tooltip-content.tooltip-bottom, .tooltip-content.tooltip-bottom {
     width: 27px;
     transition: all 0.20s linear 0s;
     -o-transition: all 0.20s linear 0s;
-    -ms-transition: all 0.20s linear 0s;
     -moz-transition: all 0.20s linear 0s;
     -webkit-transition: all 0.20s linear 0s;
 }
@@ -307,6 +301,13 @@ a.tooltip-content.tooltip-bottom, .tooltip-content.tooltip-bottom {
 #ig-video-credit.sm-vid {
     right: calc(50% - 200px);
     bottom: 28px;
+}
+
+@media screen and (max-width: 1260px) {
+    #promo-video-container {
+        width: 100vw;
+        margin-left: -2.5vw;
+    }
 }
 
 #promo-video-container video {

@@ -27,25 +27,24 @@ jQuery(document).ready(function ($) {
         window.location.href = 'http://hiitfit.wodify.com/OnlineSalesPortal/SessionsByLocationEntry.aspx?LocationId=4831&OnlineMembershipId=60787';
     });
 
-    // const bodyWidth = $(window).width();
-    // const video = document.createElement('video');
-    // video.src = 'img/hiitfit-new-promo.mp4';
-    // video.autoplay = video.muted = video.controls = true;
-    //
-    // if (bodyWidth >= 960) {
-    //     video.width = 960;
-    //     video.height = 540;
-    //     // $('#ig-video-credit').addClass('lg-vid');
-    // } else if (bodyWidth >= 640) {
-    //     video.width = 640;
-    //     video.height = 360;
-    //     // $('#ig-video-credit').addClass('md-vid');
-    // } else {
-    //     video.width = 426;
-    //     video.height = 240;
-    //     // $('#ig-video-credit').addClass('sm-vid');
-    // }
-    //
-    // document.getElementById('promo-video-container').appendChild(video);
-    // video.play();
+    const bodyWidth = $(window).width();
+    const video = document.createElement('video');
+    video.src = 'img/hiitfit-new-promo.mp4';
+    video.autoplay = video.muted = video.controls = true;
+
+    if (bodyWidth >= 1200 ) {
+        video.width = 1200;
+        video.height = 720;
+    } else if (bodyWidth >= 960) {
+        video.width = 960;
+        video.height = 540;
+    } else if (bodyWidth >= 640) {
+        video.width = 640;
+        video.height = 360;
+    } else {
+        video.width = bodyWidth;
+    }
+
+    document.getElementById('promo-video-container').appendChild(video);
+    video.play();
 });
